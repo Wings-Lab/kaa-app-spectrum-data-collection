@@ -1,0 +1,1 @@
+{"type":"record","name":"DataCollection_power_frequency_iq","namespace":"org.kaaproject.kaa.schema.sample","fields":[{"name":"frequency","type":"double"},{"name":"power","type":"double"},{"name":"iq","type":"bytes","by_default":[0]}],"version":1}

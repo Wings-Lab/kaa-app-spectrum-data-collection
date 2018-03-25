@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/arian/Documents/Kaa_Applications/SpecSense/SDK2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_1909c/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_1909c.dir/build.make CMakeFiles/cmTC_1909c.dir/build
+gmake[1]: Entering directory '/home/arian/Documents/Kaa_Applications/SpecSense/SDK2/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_1909c.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++      -o CMakeFiles/cmTC_1909c.dir/CheckSymbolExists.cxx.o -c /home/arian/Documents/Kaa_Applications/SpecSense/SDK2/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Linking CXX executable cmTC_1909c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1909c.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_1909c.dir/CheckSymbolExists.cxx.o  -o cmTC_1909c -rdynamic 
+CMakeFiles/cmTC_1909c.dir/CheckSymbolExists.cxx.o: In function `main':
+CheckSymbolExists.cxx:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_1909c.dir/build.make:97: recipe for target 'cmTC_1909c' failed
+gmake[1]: *** [cmTC_1909c] Error 1
+gmake[1]: Leaving directory '/home/arian/Documents/Kaa_Applications/SpecSense/SDK2/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_1909c/fast' failed
+gmake: *** [cmTC_1909c/fast] Error 2
+
+File /home/arian/Documents/Kaa_Applications/SpecSense/SDK2/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/arian/Documents/Kaa_Applications/SpecSense/SDK2/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_40a9a/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_40a9a.dir/build.make CMakeFiles/cmTC_40a9a.dir/build
+gmake[1]: Entering directory '/home/arian/Documents/Kaa_Applications/SpecSense/SDK2/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_40a9a.dir/CheckFunctionExists.cxx.o
+/usr/bin/c++     -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_40a9a.dir/CheckFunctionExists.cxx.o -c /home/arian/Documents/Kaa_Applications/SpecSense/SDK2/build/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_40a9a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_40a9a.dir/link.txt --verbose=1
+/usr/bin/c++    -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_40a9a.dir/CheckFunctionExists.cxx.o  -o cmTC_40a9a -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_40a9a.dir/build.make:97: recipe for target 'cmTC_40a9a' failed
+gmake[1]: *** [cmTC_40a9a] Error 1
+gmake[1]: Leaving directory '/home/arian/Documents/Kaa_Applications/SpecSense/SDK2/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_40a9a/fast' failed
+gmake: *** [cmTC_40a9a/fast] Error 2
+
+

@@ -1,0 +1,1 @@
+{"type":"record","name":"SpecSenseConfiguration2","namespace":"org.kaaproject.kaa.schema.sample","fields":[{"name":"samplePeriod","type":"int","by_default":1}],"version":1}
