@@ -1,12 +1,14 @@
+# Kaa Application to collect the distributed spectrum data
+[![Build Status]
 
-SETUP steps:
+## SETUP steps:
 1. Fire up the KAA sandbox in the virtualbox
 2. Login with default username - kaa and password - kaa
 3. Navigate to http://130.245.144.129:9080/sandbox/ and make sure kaa sandbox is running 
 
-Folder SpecSense
+## Folder SpecSense
 1. The database and schema have been configured in the sandbox. 
-	In order to change any of the configurations, follow the steps from Change Schema onwards [at] (https://kaaproject.github.io/kaa/docs/v0.10.0/Programming-guide/Your-first-Kaa-application/). 
+	In order to change any of the configurations, follow the steps from Change Schema onwards [at](https://kaaproject.github.io/kaa/docs/v0.10.0/Programming-guide/Your-first-Kaa-application/). 
         Download the new SDK and replace the code in main.cpp with your own application code
 
 2. The client code runs on the odroid board and the sandbox is running on the desktop server(ideally)
@@ -26,7 +28,7 @@ Folder SpecSense
 		$ db.logs_<application_token>.find()
 
 
-Useful Links : 
+## Useful Links : 
 
 To manipulate the data types inside the schemas and a list of possible datatypes available-
 
