@@ -1,5 +1,5 @@
-# Kaa Application to collect the distributed spectrum data
-[![Build Status](https://docs.kaaproject.org/display/KAA/Configuration)](https://kaaproject.github.io/kaa/docs/v0.10.0/Programming-guide/Your-first-Kaa-application/)
+# Distributed Spectrum Sensing
+Kaa Application to collect the distributed spectrum data
 
 ## SETUP steps:
 1. Fire up the KAA sandbox in the virtualbox
