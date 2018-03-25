@@ -8,7 +8,7 @@
 
 ## Folder SpecSense
 1. The database and schema have been configured in the sandbox. 
-	In order to change any of the configurations, follow the steps from Change Schema onwards [at](https://kaaproject.github.io/kaa/docs/v0.10.0/Programming-guide/Your-first-Kaa-application/). 
+	In order to change any of the configurations, follow the steps from Change Schema onwards [here](https://kaaproject.github.io/kaa/docs/v0.10.0/Programming-guide/Your-first-Kaa-application/). 
         Download the new SDK and replace the code in main.cpp with your own application code
 
 2. The client code runs on the odroid board and the sandbox is running on the desktop server(ideally)
@@ -27,13 +27,9 @@
 		$ mongo kaa
 		$ db.logs_<application_token>.find()
 
+## Contributors
+**Snigdha Kamal, Jitendra Savanpur, Mallesham Dasari, Arani Bhattacharya**
 
-## Useful Links : 
-
+## Useful Links
 To manipulate the data types inside the schemas and a list of possible datatypes available-
-
 https://docs.kaaproject.org/display/KAA/Configuration
-
-
-
-
