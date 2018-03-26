@@ -1,7 +1,7 @@
 # Distributed Spectrum Sensing
 Kaa Application to collect the distributed spectrum data
 
-## SETUP steps:
+## SETUP:
 1. Fire up the KAA sandbox in the virtualbox
 2. Login with default username - kaa and password - kaa
 3. Navigate to http://130.245.144.129:9080/sandbox/ and make sure kaa sandbox is running 
